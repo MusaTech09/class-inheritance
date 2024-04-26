@@ -8,6 +8,14 @@ class Teacher extends Person {
     this.subject = subject;
     this.yearsOfExperience = yearsOfExperience;
   }
+
+  static combinedYearsOfExperience(teachers){
+    let count = 0;
+
+    teachers.forEach(teacher => count += teacher.yearsOfExperience);
+
+    return count;
+  }
 }
 
 /****************************************************************************/
